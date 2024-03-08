@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+    
+    <body>
+
+    <div class="full-table">
+      <div style="display: flex;justify-content: space-between; padding: 0px 20px 0px 20px;">
+        
+        <div>
+          <h2>Time-Table Even Sem (2023-24)</h2>
+        </div>
+        <div>
+          <h3>w.e.f Z feb. 2024</h3>
+          <h3>Mentor: Ms. ABC</h3>
+    
+        </div>
+      </div>
+    
+      <table>
+        <tr>
+          <th></th>
+          <th>1<br>A:00-B:00</th>
+          <th>2<br>C:00-D:00</th>
+          <th>3<br>E:00-F:00</th>
+          <th>4<br>G:00-H:00</th>
+          <th>LUNCH<br>I:00-J:00</th>
+    
+          <th>5<br>K:00-L:00</th>
+          <th>6<br>M:00-N:00</th>
+          <th>7<br>O:00-P:00</th>
+          <th>8<br>Q:00-R:00</th>
+    
+        </tr>
+        <tr>
+          <td><b>Mon</b></td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Prof. A</td>
+          <td data-subject="BDaA"><span class="room">AC-0F</span><b>BDaA</b><br>Inst. H</td>
+          <td data-subject="ITCAS"><span class="room">AC-0F</span><b>ITCaS</b><br>Inst. C</td>
+          <td data-subject="SESS"><span class="room">AC-0F</span><b>SE</b><br>Inst. E</td>
+          <td rowspan="5"></td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td colspan="2" data-subject="BDaA"><span class="room">AC-0F</span><b>BDaAL</b><br>Inst. H</td>
+        </tr>
+        <tr>
+          <td><b>Tu</b></td>
+          <td colspan="2" data-subject="TGK"><span class="room">AC-0F</span><b>CRC-T</b><br>Inst. G</td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td data-subject="SESS"><span class="room">AC-0F</span><b>SE</b><br>Inst. E</td>
+          <td data-subject="UHBNAEC"><span class="room">AC-0F</span><b>UHBNAEC</b><br>Inst. D</td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+          <td colspan="2" data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+        </tr>
+        <tr>
+          <td><b>We</b></td>
+          <td data-subject="BDaA"><span class="room">AC-0F</span><b>BDaA</b><br>Fst. H</td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+          <td colspan="2" data-subject="CN"><span class="room">AC-0F</span><b>CNL</b><br>Inst. B</td>
+          <td data-subject="ITCAS"><span class="room">AC-0F</span><b>ITCaS</b><br>Inst. C</td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td data-subject="SESS"><span class="room">AC-0F</span><b>SE</b><br>Inst. E</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>Th</b></td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td data-subject="BDaA"><span class="room">AC-0F</span><b>BDaA</b><br>Inst. H</td>
+          <td data-subject="UHBNAEC"><span class="room">AC-0F</span><b>UHBNAEC</b><br>Inst. D</td>
+          <td data-subject="CN"><span class="room">AC-0F</span><b>CN</b><br>Inst. B</td>
+          <td colspan="2" data-subject="TGK"><span class="room">AC-0F</span><b>CRC-T</b><br>Inst. G</td>
+          <td data-subject="SESS"><span class="room">AC-0F</span><b>SE</b><br>Inst. E</td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+        </tr>
+        <tr>
+          <td><b>Fr</b></td>
+          <td data-subject="BDaA"><span class="room">AC-0F</span><b>BDaA</b><br>Inst. H</td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+          <td data-subject="WT"><span class="room">AC-0F</span><b>WT</b><br>Inst. A</td>
+          <td data-subject="SESS"><span class="room">AC-0F</span><b>SE</b><br>Inst. E</td>
+          <td data-subject="SS"><span class="room">AC-0F</span><b>SS</b><br>Inst. F</td>
+          <td data-subject="BDaA"><span class="room">AC-0F</span><b>BDaA</b><br>Inst. H</td>
+          <td data-subject="UHBNAEC"><span class="room">AC-0F</span><b>UHBNAEC</b><br>Inst. D</td>
+          <td></td>
+        </tr>
+    
+      </table>
+
+      <div id="subject-info-WT" class="subject-info">
+        <h3>Web Technology</h3>
+        <p>Web technology refers to the diverse set of tools, protocols, and software applications used to create, manage, and deliver content over the World Wide Web. It encompasses a range of disciplines including programming languages, web servers, databases, and networking protocols. </p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/93-3zmVvCGU?si=uNrI7TXPdmfBJA66" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x3c1ih2NJEg?si=465yApObJ6Pp8M"  frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+
+    <div id="subject-info-TGK" class="subject-info">
+      <h3>Corporate Resource Training</h3>
+      <p>This subject covers is a training program for industry.</p>
+      <h4>Video Resources:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xk4_1vDrzzo?si=bp8yaXLbxM0-U4p-" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cpxI9eQdeec?si=EbBNxk-fySa62dTX" frameborder="0" allowfullscreen></iframe>
+      
+    </div>
+    <div id="subject-info-SS" class="subject-info">
+      <h3>Soft Skills</h3>
+      <p>This subject enhances the interpersonal and communication skills of indivisual.</p>
+      <h4>Video Resources:</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HAnw168huqA?si=fU9YuD64CJvGaE_x" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/srn5jgr9TZo?si=QyId1nECw91gUPqt" frameborder="0" allowfullscreen></iframe>
+      
+  </div>
+
+
+    
+    <div  id="subject-info-BDaA" class="subject-info">
+        <h3>Big Data Analytics</h3>
+        <p>This subject focuses on analyzing large datasets using various techniques and tools.</p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bAyrObl7TYE?si=BJWkuTkLUOGlPKfM"  frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j-0cUmUyb-Y?si=SucONpqBLz22bjRG" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    
+    <div id="subject-info-ITCAS" class="subject-info">
+        <h3>Indian Tradition, Culture and Society</h3>
+        <p>Indian Tradition, Culture, and Society is a comprehensive exploration of the rich heritage, diverse customs, and societal dynamics that define India's cultural lancape.</p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bOwUYE6DE58?si=MDuNUUsWvDj2RcvJ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VjjrS7ugItw?si=Q3rFslh5tH_Ikb8w" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    
+    <div id="subject-info-SESS" class="subject-info">
+        <h3>Software Engineering</h3>
+        <p>This subject focuses on software development methodologies and practices.</p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fi3_BjVzpqk?si=N4vm39rHvgWn1Haz" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzJ46YA_RaA?si=4G0NF7gQAgfOsBe_" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    
+    <div id="subject-info-CN" class="subject-info">
+        <h3>Computer Networks</h3>
+        <p>This subject covers the principles and protocols of computer networking.</p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jpaz3YuCil4?si=WmPnYSHByqcU4R68" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zN8YNNHcaZc?si=zGC1CWEsURIACVK7" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    
+    <div id="subject-info-UHBNAEC" class="subject-info">
+        <h3>Understanding Human Being, Nature and Existence Comprehensively</h3>
+        <p>Understanding Human Being, Nature, and Existence comprehensively explores what it means to be human, our relationship with the natural world, and the broader scope of existence. It delves into questions about who we are, how we interact with our eironment, and our place in the universe. </p>
+        <h4>Video Resources:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HLp5GzkDRvU?si=FWFckAfGWVF70GEv" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/266BKAHHRu0?si=8nYT2OaoghFlsX2P" frameborder="0" allowfullscreen></iframe>
+      
+    </div>
+    
+    
+  </body>
+</html>
