@@ -1,6 +1,6 @@
 # Interactive Timetable Project
 
-This project is an interactive timetable created for a web technology course. Each cell in the timetable is clickable to provide its description.
+This project is an interactive timetable created as a recreational activity. Each cell in the timetable is clickable to provide its description.
 
 ## Features
 - Clickable timetable cells with descriptions
