@@ -10,7 +10,7 @@ The project is deployed and can be accessed [here]([paste-your-deployment-link](
 
 ## Installation
 1. Clone the repository to your local machine.
-2. Open `TT.html` in your preferred web browser.
+2. Open `index.html` in your preferred web browser.
 
 ## Usage
 - Click on any timetable cell to view its description.
