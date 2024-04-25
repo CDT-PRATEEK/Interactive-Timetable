@@ -2,13 +2,16 @@
 
 This project is an interactive timetable created as a recreational activity. Each cell in the timetable is clickable to provide its description.
 
+The project is deployed and can be accessed [here](https://6629557c8ab5bf3f11332569--interactivetimetable.netlify.app/).
+
+
 ## Features
 - Clickable timetable cells with descriptions
 - Additional CSS and JavaScript enhancements
 
 ## Installation
 1. Clone the repository to your local machine.
-2. Open `TT.html` in your preferred web browser.
+2. Open `index.html` in your preferred web browser.
 
 ## Usage
 - Click on any timetable cell to view its description.
