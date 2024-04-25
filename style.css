@@ -1,46 +1,54 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 th, td {
     border: 2px solid #0c0a0a;
-    
     text-align: center;
+    padding: 8px;
 }
 
 .room {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 h2 {
     text-align: center;
-    line-height: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .full-table {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 20px;
 }
 
 .subject-info {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
-   
-    box-shadow: 0 4px 6px rgba(255, 94, 98, 0.5); 
+    box-shadow: 0 4px 6px rgba(255, 94, 98, 0.5);
     display: none;
-    text-align: center; 
-    color: #fff; 
-    position: relative; 
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-color: #333;
+    width: 80%; /* Center and control width of subject info */
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .subject-info::before {
     content: '';
@@ -50,31 +58,31 @@ h2 {
     transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #ff5e62; 
+    border-bottom: 10px solid #ff5e62;
 }
 
 .subject-info h3 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .subject-info p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
-.subject-info h4{
-
-    font-size: 18px;
+.subject-info h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
-
-.subject-info:after {
+.subject-info::after {
     content: '';
     display: block;
-    height: 20px; 
+    height: 20px;
 }
+
 .subject-info:hover {
     transform: translateY(-10px);
 }
@@ -83,54 +91,55 @@ h2 {
     transform: scale(1.5);
 }
 
-
 .subject-info iframe {
-    border: 5px solid #fff; 
-    border-radius: 18px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    margin-right: 20px; 
+    border: 5px solid #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
 }
-
 
 td:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 20px 10px rgba(17, 0, 255, 0.8); 
-    transition: box-shadow 0.1s ease; 
+    box-shadow: 0px 0px 20px 10px rgba(17, 0, 255, 0.8);
+    transition: box-shadow 0.1s ease;
 }
 
 td:active {
-    transform: translate(2px, 2px); 
-    transition: transform 0.2s ease; 
+    transform: translate(2px, 2px);
+    transition: transform 0.2s ease;
 }
 
-td[data-subject="WT"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(255, 0, 0, 0.8); 
-}
+@media screen and (max-width: 768px) {
+    td[data-subject="WT"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(255, 0, 0, 0.8);
+    }
 
-td[data-subject="TGK"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(42, 142, 100, 0.8); 
-}
+    td[data-subject="TGK"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(42, 142, 100, 0.8);
+    }
 
-td[data-subject="SS"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(184, 74, 194, 0.8); 
-}
+    td[data-subject="SS"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(184, 74, 194, 0.8);
+    }
 
-td[data-subject="BDaA"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(67, 67, 12, 0.8); 
-}
+    td[data-subject="BDaA"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(67, 67, 12, 0.8);
+    }
 
-td[data-subject="ITCAS"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(15, 152, 15, 0.578); 
-}
+    td[data-subject="ITCAS"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(15, 152, 15, 0.578);
+    }
 
-td[data-subject="SESS"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(0, 76, 255, 0.8); 
-}
+    td[data-subject="SESS"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(0, 76, 255, 0.8);
+    }
 
-td[data-subject="CN"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(193, 157, 0, 0.8); 
-}
+    td[data-subject="CN"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(193, 157, 0, 0.8);
+    }
 
-td[data-subject="UHBNAEC"]:hover {
-    box-shadow: 0px 0px 20px 10px rgba(128, 0, 128, 0.8);
+    td[data-subject="UHBNAEC"]:hover {
+        box-shadow: 0px 0px 20px 10px rgba(128, 0, 128, 0.8);
+    }
 }
